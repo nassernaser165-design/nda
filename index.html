@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>ناصر العتيبي</title>
 
+  <style>
+    body {
+      background: black;
+      color: white;
+      text-align: center;
+      font-family: Arial;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      margin-top: 30px;
+    }
+
+    img {
+      max-width: 90%;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+
+    .note {
+      margin-top: 20px;
+      color: #aaa;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Hacked By ناصر العتيبي</h1>
+
+  <!-- الصورة -->
+  <img src="photo.png" alt="image">
+
+  <div class="note">
+    اضغط في أي مكان لتشغيل الصوت
+  </div>
+
+  <!-- الصوت -->
+  <audio id="music" loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    const audio = document.getElementById("music");
+
+    document.addEventListener("click", () => {
+      audio.volume = 1;
+      audio.play();
+    }, { once: true });
+  </script>
+
+</body>
+</html>
