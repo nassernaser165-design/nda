@@ -1,60 +1,44 @@
 <!DOCTYPE html>
 <html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <title>ناصر العتيبي</title>
+<meta charset="UTF-8">
+<title>Hacked</title>
 
-  <style>
-    body {
-      background: black;
-      color: white;
-      text-align: center;
-      font-family: Arial;
-      margin: 0;
-      padding: 0;
-    }
+<style>
+body {
+  margin: 0;
+  background: black;
+  color: red;
+  text-align: center;
+  font-family: Arial;
+}
 
-    h1 {
-      margin-top: 30px;
-    }
-
-    img {
-      max-width: 90%;
-      margin-top: 20px;
-      border-radius: 10px;
-    }
-
-    .note {
-      margin-top: 20px;
-      color: #aaa;
-    }
-  </style>
+img {
+  max-width: 300px;
+  margin-top: 20px;
+}
+</style>
 </head>
 
 <body>
 
-  <h1>Hacked By ناصر العتيبي</h1>
+<h1>Hacked By ناصر العتيبي</h1>
 
-  <!-- الصورة -->
-  <img src="photo.png" alt="image">
+<img src="photo.png" alt="photo">
 
-  <div class="note">
-    اضغط في أي مكان لتشغيل الصوت
-  </div>
+<p>اضغط أي مكان لتشغيل الصوت</p>
 
-  <!-- الصوت -->
-  <audio id="music" loop>
-    <source src="music.mp3" type="audio/mpeg">
-  </audio>
+<audio id="music" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
 
-  <script>
-    const audio = document.getElementById("music");
-
-    document.addEventListener("click", () => {
-      audio.volume = 1;
-      audio.play();
-    }, { once: true });
-  </script>
+<script>
+document.addEventListener("click", () => {
+  const audio = document.getElementById("music");
+  audio.volume = 1;
+  audio.play();
+}, { once: true });
+</script>
 
 </body>
 </html>
