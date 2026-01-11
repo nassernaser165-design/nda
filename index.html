@@ -1,10 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Redirecting...</title>
-  <meta http-equiv="refresh" content="0; url=https://nassernaser165-design.github.io/nda/">
+<meta charset="UTF-8">
+<title>Hacked</title>
+
+<style>
+body {
+  margin: 0;
+  background: black;
+  color: red;
+  text-align: center;
+  font-family: Arial;
+}
+
+img {
+  max-width: 300px;
+  margin-top: 20px;
+}
+</style>
 </head>
 <body>
+
+<h1>Hacked By ناصر العتيبي</h1>
+
+<img src="photo.png" alt="photo">
+
+<p>اضغط أي مكان لتشغيل الصوت</p>
+
+<audio id="music" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+document.addEventListener("click", () => {
+  const audio = document.getElementById("music");
+  audio.volume = 1;
+  audio.play();
+}, { once: true });
+</script>
+
 </body>
 </html>
